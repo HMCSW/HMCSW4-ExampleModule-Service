@@ -1,0 +1,11 @@
+{
+  "name": "ExampleModuleService",
+  "description": "ExampleModuleService",
+  "identifier": "ExampleModuleService",
+  "title": "ExampleModuleService",
+  "version": "1.0.0",
+  "type": "service",
+  "argument": [],
+  "authors": [],
+  "minimumCoreVersion": "35"
+}

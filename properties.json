@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "team.service.example.test" : "site.cp.teams.permission.lang"
+  },
+  "disableDefaultActions": [],
+  "neededExtensions": [],
+  "neededHostSettings": [],
+  "neededProductSettings": [],
+  "actions": [
+    {
+      "action": "example",
+      "functionName": "exampleMethod",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "int",
+          "default": 0
+        }
+      ],
+      "message": {
+        "success": "site.cp.service.action.message.success",
+        "error": "site.cp.service.action.message.failed"
+      }
+    }
+  ],
+  "apiPath": [
+    {
+      "path": "info",
+      "functionName": "getData",
+      "method": "GET",
+      "parameters": []
+    }
+  ]
+}
