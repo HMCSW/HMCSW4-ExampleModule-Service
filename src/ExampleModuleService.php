@@ -10,7 +10,7 @@ class ExampleModuleService implements ServiceRepository
 {
   protected Service $service;
   protected ModuleServiceRepository $module;
-  protected array $get = ["success" => false];
+  protected array $get = ["success" => false]; 
 
   public function __construct(Service $service, ModuleServiceRepository $module)
   {

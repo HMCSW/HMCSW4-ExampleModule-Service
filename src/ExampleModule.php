@@ -9,7 +9,7 @@ use hmcsw\service\module\ModuleServiceRepository;
 
 class ExampleModule implements ModuleServiceRepository
 {
-  private array $config;
+  private array $config; 
 
   public function __construct()
   {
@@ -77,7 +77,7 @@ class ExampleModule implements ModuleServiceRepository
 
   public function getInstance(Service $service): ServiceRepository
   {
-    return new ExampleModuleService($service, $this);
+    return new PFSenseService($service, $this);
   }
 
 }
