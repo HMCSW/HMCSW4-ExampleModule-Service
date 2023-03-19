@@ -33,37 +33,37 @@ class ExampleModuleService implements ServiceRepository
     // TODO: Implement onCreate() method.
   }
 
-  public function onDelete(bool $reinstall = false): array
+  public function onDelete(bool $reinstall = false): void
   {
     // TODO: Implement onDelete() method.
   }
 
-  public function onEnable(): array
+  public function onEnable(): void
   {
     // TODO: Implement onEnable() method.
   }
 
-  public function onDisable(): array
+  public function onDisable(): void
   {
     // TODO: Implement onDisable() method.
   }
 
-  public function onTerminate(): array
+  public function onTerminate(): void
   {
     // TODO: Implement onTerminate() method.
   }
 
-  public function onTerminateInstant(): array
+  public function onTerminateInstant(): void
   {
     // TODO: Implement onTerminateInstant() method.
   }
 
-  public function onWithdrawTerminate(): array
+  public function onWithdrawTerminate(): void
   {
     // TODO: Implement onWithdrawTerminate() method.
   }
 
-  public function onExtend(int $time): array
+  public function onExtend(int $time): void
   {
     // TODO: Implement onExtend() method.
   }
@@ -73,7 +73,7 @@ class ExampleModuleService implements ServiceRepository
     // TODO: Implement onLogin() method.
   }
 
-  public function onSetName(string $name): array
+  public function onSetName(string $name): void
   {
     // TODO: Implement onSetName() method.
   }
