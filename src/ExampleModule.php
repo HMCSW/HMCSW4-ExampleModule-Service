@@ -46,17 +46,9 @@ class ExampleModule implements ModuleServiceRepository
 
   public function loadPage(array $args, ServiceRepository $serviceRepository, CPController $CPController): void
   {
-    $get = $this->getData();
+    $get = $serviceRepository->getData();
 
     $CPController->renderPage('/cp/teams/services/domain.twig', $args);
-  }
-
-  public function getData(): array
-  {
-    $data = $this->get;
-    if (!$data['success']) return $data;
-
-    return ["success" => true, "response" => []];
   }
 
   public function hook(): array
@@ -77,7 +69,7 @@ class ExampleModule implements ModuleServiceRepository
 
   public function getInstance(Service $service): ServiceRepository
   {
-    return new PFSenseService($service, $this);
+    return new ExampleModuleService($service, $this);
   }
 
 }

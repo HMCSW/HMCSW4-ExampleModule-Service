@@ -2,6 +2,7 @@
 
 namespace hmcswModule\ExampleModule\src;
 
+use hmcsw\exception\ServiceException;
 use hmcsw\objects\user\teams\service\Service;
 use hmcsw\objects\user\teams\service\ServiceRepository;
 use hmcsw\service\module\ModuleServiceRepository;
@@ -30,7 +31,7 @@ class ExampleModuleService implements ServiceRepository
 
   public function onCreate(bool $reinstall = false): array
   {
-    // TODO: Implement onCreate() method.
+    return [];
   }
 
   public function onDelete(bool $reinstall = false): void
@@ -70,7 +71,7 @@ class ExampleModuleService implements ServiceRepository
 
   public function onLogin(string $key): array
   {
-    // TODO: Implement onLogin() method.
+    throw new ServiceException("Not implemented");
   }
 
   public function onSetName(string $name): void
@@ -80,6 +81,6 @@ class ExampleModuleService implements ServiceRepository
 
   public function getData(): array
   {
-    // TODO: Implement getData() method.
+    return $this->get;
   }
 }
