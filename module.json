@@ -1,11 +1,11 @@
 {
   "name": "ExampleModuleService",
   "description": "ExampleModuleService",
-  "identifier": "ExampleModuleService",
+  "identifier": "ExampleModule",
   "title": "ExampleModuleService",
-  "version": "1.0.0",
+  "version": "4.1-2.3",
   "type": "service",
   "argument": [],
   "authors": [],
-  "minimumCoreVersion": "35"
+  "minimumCoreVersion": "72"
 }

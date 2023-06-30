@@ -72,4 +72,13 @@ class ExampleModule implements ModuleServiceRepository
     return new ExampleModuleService($service, $this);
   }
 
+  public function getOrderConfigurations(): array
+  {
+    return [];
+  }
+
+  public function validOrderConfiguration(array $configuration): void
+  {
+    // TODO: Implement validOrderConfiguration() method.
+  }
 }
