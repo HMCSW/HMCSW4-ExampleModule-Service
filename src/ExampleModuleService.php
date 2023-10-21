@@ -5,6 +5,7 @@ namespace hmcswModule\ExampleModule\src;
 use hmcsw\exception\ServiceException;
 use hmcsw\objects\user\teams\service\Service;
 use hmcsw\objects\user\teams\service\ServiceRepository;
+use hmcsw\objects\user\teams\Team;
 use hmcsw\service\module\ModuleServiceRepository;
 
 class ExampleModuleService implements ServiceRepository
@@ -82,5 +83,10 @@ class ExampleModuleService implements ServiceRepository
   public function getData(): array
   {
     return $this->get;
+  }
+
+  public function onSetTeam(Team $newTeam): void
+  {
+    // TODO: Implement onSetTeam() method.
   }
 }
